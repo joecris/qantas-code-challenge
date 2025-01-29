@@ -31,6 +31,21 @@ To run the tests, use the command
 npm run test
 ```
 
+## Building the application
+To build the application, run
+
+```bash
+npm run build
+```
+
+then you can run the application using
+
+```bash
+npm run start
+```
+
+This will also start the application on port 3000
+
 ## Project solution notes
 
 The approach I have taken in building the requirements are the following:
