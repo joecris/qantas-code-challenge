@@ -14,8 +14,14 @@
 }
 
 .hotelOffersHeaderSubtitle {
+    margin-bottom: 1.2rem;
+
     p {
         font-weight: bold;
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 0;
     }
 }
 

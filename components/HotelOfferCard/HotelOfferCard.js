@@ -22,7 +22,7 @@ export default function HotelOfferCard({ hotelOffer }) {
 
     return (
         <div className={styles.card}>
-            <div className={styles.cardImage} style={cardImageBackground}>
+            <div className={styles.cardImage} style={cardImageBackground} data-testid='cardImage-data-testid'>
                 {offer?.promotion?.title && <div className={styles.cardImageBadge}>
                     {offer.promotion.title}
                 </div>}
