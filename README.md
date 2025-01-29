@@ -102,6 +102,6 @@ The **CardDetails** also used flexbox approach to handle the layout.
 
 The **RatingsComponent** converts the given "type" and value to visual representations of either a "star" or "circle" icons. Main consideration when the component was implemented was that the ratings value can have a "half" rating (ex. 4.5). 
 
-Note: SVGs where used to implement the RatingsIcon component and was taken from the [Qantas Hotels](https://www.qantas.com/hotels?mid=c1h) website.
+Note: SVGs were used to implement the RatingsIcon component and was taken from the [Qantas Hotels](https://www.qantas.com/hotels?mid=c1h) website.
 
 Additional "helper/utility" functions where implemented to help get the display values from the raw values (ex. hotel name, price, etc.). These utility functions are simple at present adn may seem unnecessary, but I thought it would be good to create them because of high chance that these "raw-to-display" value conversions might change.
