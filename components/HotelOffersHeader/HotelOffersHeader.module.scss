@@ -1,4 +1,4 @@
-@import '../../styles/custom-variables.scss';
+@use '../../styles/colors';
 
 .hotelOffersHeader {
     display: flex;
@@ -21,7 +21,7 @@
 
 .hotelOffersHeaderSubtitleDescription {
     font-style: italic;
-    color: $dark-grey;
+    color: colors.$dark-grey;
 }
 
 .hotelOffersHeaderSortInput {
@@ -31,7 +31,7 @@
     }
 
     select {
-        border: 2px solid $light-grey;
+        border: 2px solid colors.$light-grey;
         border-radius: 2px;
         margin-left: 0.5rem;
         padding: 0.2rem 0.5rem;

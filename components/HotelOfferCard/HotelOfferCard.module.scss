@@ -1,0 +1,111 @@
+@use '../../styles/colors';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid colors.$light-grey;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        height: 14rem;
+        margin-bottom: 2rem;
+        border: none;
+    }
+}
+
+.cardImage {
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    margin-right: 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+        width: 20%;
+        height: 100%;
+    }
+}
+
+.cardImageBadge {
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    color: colors.$red;
+    background-color: white;
+    padding: 0.8rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.cardDetails {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        border-top: 2px solid colors.$light-grey;
+        padding: 1rem 0;
+        width: 80%;
+    }
+}
+
+.cardDetailsHotelAddress {
+    color: colors.$light-grey;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 0.4rem;
+}
+
+.cardDetailsOfferName {
+    color: colors.$red;
+    font-size: 1rem;
+    text-decoration: underline;
+    margin: 2rem 0;
+}
+
+.cardDetailsCancellationOption {
+    color: colors.$green;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.cardDetailsPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.cardDetailsPriceDescription {
+    color: colors.$light-grey;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0.2rem;
+}
+
+.cardDetailsPriceCurrency {
+    font-size: 1.2rem;
+    font-weight: 200;
+    vertical-align: top;
+    padding: 0.2rem;
+}
+
+.cardDetailsPriceAmount {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0.2rem 0;
+}
+
+.cardDetailsPriceSavings {
+    color: colors.$red;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+}
